@@ -1,6 +1,7 @@
 from room import Room
 from player import Player
 from world import World
+from traverse_path import traverse_path
 
 import random
 
@@ -22,7 +23,7 @@ world.printRooms()
 player = Player("Name", world.startingRoom)
 
 # Fill this out
-traversalPath = []
+traversalPath = traverse_path(world)
 
 
 
